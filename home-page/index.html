@@ -126,12 +126,16 @@
         <section class="container-email">
           
             <h3>Email</h3>
-            <input type="email" class="email-field" placeholder="Enter your email">
+            <input type="email" id="email" class="email-field" placeholder="Enter your email">
+            <p id="email-error" style="color: red; display: none;">Please enter a valid email.</p>
             <p>We promise not to spam</p>
 
             <h3>Name</h3>
-            <input type="text" class="password-field" placeholder="Enter your password">
-            <button class="subscribe-btn">Subscribe</button>
+           
+            <input type="text" id="name" class="password-field" placeholder="Enter your name">
+            <p id="name-error" style="color: red; display: none;">Name field cannot be empty.</p>
+        
+            <button class="subscribe-btn" id="subscribe-btn" >Subscribe</button>
         </section>
     </div>
    </section>
@@ -159,6 +163,7 @@
         </div>
       </div>
     </footer>
+
     <script src="scripts.js"></script>
   </body>
 </html>
