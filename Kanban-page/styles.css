@@ -1,0 +1,242 @@
+/* Reset básico para remover margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+  font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+  background-color: white; /* Cor de fundo suave */
+  min-height: 100vh; /* Garantir que cubra toda a altura da tela */
+  display: flex; /* Usando flexbox no corpo para layout */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  
+}
+
+/* Estilos para o header */
+.header {
+  width: 100%; /* Largura fixa */
+  height: 80px;  /* Altura fixa */
+  padding: 20px   ; /* Padding de 20px */
+  display: flex;
+ 
+  align-items: center; /* Alinha verticalmente os itens */
+  gap: 20px; /* Espaçamento de 20px entre os elementos */
+  background-color: #331436; /* Cor de fundo do header */
+  color: #fff; /* Cor do texto */
+}
+
+/* Estilo para o logo */
+.logo img {
+  width: 50px;  /* Largura do logo */
+  height: 50px; /* Altura do logo */
+  border-radius: 50%; /* Raio de borda 50% para tornar o logo circular */
+}
+
+/* Estilo para o título "Project Manager" */
+.title {
+  font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+  font-weight: 400; /* Peso da fonte */
+  font-size: 28px; /* Tamanho da fonte */
+  line-height: 36px; /* Altura da linha */
+  color: #FFFFFF; /* Cor do texto para o título "Project Manager" */
+  margin-left: 10px;
+  padding-left: 10px; /* Ajuste para garantir que fique próximo do logo */
+  margin-right: 400px; 
+}
+
+nav {
+  display: flex;                 /* Usando flexbox */
+  justify-content: flex-end;     /* Alinha os itens à direita */
+  align-items: center;           /* Centraliza os itens verticalmente */
+  gap: 30px;                     /* Espaçamento entre os itens do menu */
+}
+
+nav ul {
+  list-style: none;              /* Remove os marcadores da lista */
+  display: flex;                 /* Exibe os itens da lista na horizontal */
+  gap: 30px;                     /* Espaçamento entre os links */
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;         /* Remove o sublinhado */
+  color: #fff;                   /* Cor dos links */
+}
+
+nav .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+nav .search-bar .search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.search-bar {
+  display: flex;                 /* Para alinhar o campo de pesquisa ao lado dos links */
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;                  /* Espaçamento interno do campo de texto */
+  margin-left: 10px;             /* Distância entre os links e a barra de pesquisa */
+}
+/* Estilos para o formulário de pesquisa */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px 40px 5px 10px; /* Espaçamento para o ícone da lupa */
+  width: 200px;                /* Largura da caixa de pesquisa */
+  border: 2px solid #7a3a5a;   /* Borda com uma cor mais clara que o header */
+  background-color: #7a3a5a;   /* Cor de fundo suave para o campo de pesquisa */
+  color: #fff;                  /* Cor do texto da barra de pesquisa (branco) */
+  border-radius: 8px;           /* Borda arredondada */
+  font-size: 14px;               /* Tamanho da fonte */
+}
+
+.search-bar input::placeholder {
+  color: #ccc;                  /* Cor do texto do placeholder */
+}
+
+/* Ícone de lupa */
+.search-icon {
+  position: absolute;
+  right: 10px;                  /* Posiciona o ícone no canto direito */
+  top: 50%;
+  transform: translateY(-50%);  /* Centraliza verticalmente */
+  font-size: 16px;              /* Tamanho do ícone */
+  color: #7a3a5a;               /* Cor da lupa, mais clara que o header */
+  pointer-events: none;         /* Impede que o ícone interfira na interação com o campo */
+}
+
+
+.element {
+width: 552px;
+height: 36px;
+/* Add other styles as needed, like background color, border, etc. */
+}
+
+.todo-container {
+width: 100%; /* Fills the remaining width */
+height: 746px; /* Fixed height */
+min-height: 600px; /* Minimum height for smaller screens */
+padding: 40px 120px; /* Reduzir o padding nas laterais */
+background-color: #f0f0f0; /* Optional background color */
+gap: 20px; /* Optional gap for spacing between quadros (if needed) */
+}
+
+.tolcol {
+width: 210px;
+min-width: 240px;
+height: 626px;
+border-radius: 8px;
+padding: 16px;
+background-color: #FFFFFF;
+gap: 10px; /* This will add a 10px gap between child elements */
+}
+
+.to-do-title {
+width: 208px;
+height: 24px;
+font-family: Roboto;
+font-weight: 500;
+font-size: 24px;
+line-height: 24px;
+color: #331436;
+}
+
+/* Contêiner que vai abrigar os blocos */
+.todo-container {
+  display: flex; /* Usando Flexbox para alinhar os blocos */
+  gap: 20px; /* Espaço entre os blocos */
+  justify-content: space-between; /* Espaçamento uniforme entre os blocos */
+  padding: 40px; /* Padding ao redor do contêiner */
+}
+
+
+.footer {
+  width: 1440px; /* Largura total */
+  height: 220px; /* Altura fixa */
+  padding: 60px; /* Padding */
+  display: flex; /* Usando flexbox */
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+.footer-content {
+  display: flex; /* Flexbox para organizar o conteúdo */
+  justify-content: space-between; /* Espaça os blocos internos */
+  gap: 60px; /* Espaçamento entre os blocos */
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+/* Estilos para o Footer */
+.footer {
+  background-color: #331436;
+  color: #fff;
+  padding: 40px 170px;
+}
+
+.footer-container {
+  width: 786px;  /* Largura fixa do container */
+  height: 100px; /* Altura fixa */
+  display: flex;
+  justify-content: space-between; /* Distribui os itens */
+  gap: 60px; /* Espaçamento de 60px entre os itens */
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px; /* Espaçamento entre os links */
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-left p {
+  margin: 0;
+  color: #fff; /* Define a cor branca para o texto */
+}

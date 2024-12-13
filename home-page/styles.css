@@ -1,0 +1,541 @@
+/* Reset básico para remover margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+  font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+  background-color: white; /* Cor de fundo suave */
+}
+
+/* Estilos gerais */
+body {
+   font-family: "Roboto", serif;
+   background-color: #ffffff;
+ }
+  /* Header */
+ .header {
+   display: flex;
+   align-items: center;
+   background-color: #331436;
+   color: white;
+   padding: 20px;
+   gap: 20px;
+   width: 1440px; ;
+  
+   height: 80px;;
+   justify-content: space-between;
+   margin: 0 auto; /* Centraliza o cabeçalho se a largura for menor que a tela */
+ }
+
+  .header-title {
+    width: 1440px;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+    font-weight: 400; /* Peso da fonte */
+    font-size: 28px; /* Tamanho da fonte */
+    line-height: 36px; /* Altura da linha */
+    color: #FFFFFF; /* Cor do texto para o título "Project Manager" */
+}
+ 
+/* Container para logo e título e botão */
+.logo-container {
+   display: flex;         /* Usado para alinhar horizontalmente */
+   align-items: center;   /* Alinha o conteúdo verticalmente no centro */
+   gap: 10px;             /* Espaço entre a imagem e o título */
+   justify-content: space-between; /* Coloca o título à esquerda e o botão à direita */
+   width: 100%;             /* O container ocupa toda a largura disponível */
+ }
+
+ .login-btn {
+   width: 240px;             /* Largura do botão */
+   height: 48px;             /* Altura do botão */
+   background-color: #CB4F57; /* Cor de fundo (azul) */
+   color: white;             /* Cor do texto */
+   font-size: 16px;          /* Tamanho da fonte */
+   font-weight: bold;        /* Fonte em negrito */
+   border: none;             /* Remove a borda padrão */
+   border-radius: 4px;       /* Bordas arredondadas */
+   cursor: pointer;         /* Cursor indicando que o botão é clicável */
+   text-align: center;       /* Centraliza o texto dentro do botão */
+   display: flex;            /* Flex para centralizar o texto verticalmente */
+   justify-content: center;  /* Centraliza horizontalmente */
+   align-items: center;      /* Centraliza verticalmente */
+   transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+   position: absolute;       /* Define o posicionamento absoluto */
+   right: 20px;              /* Coloca o botão 20px da borda direita */
+   bottom: 570px;             /* Coloca o botão 20px da borda inferior (ou pode ser ajustado) */
+ }
+  .login-btn:hover {
+   background-color: #E87D83; /* Cor de fundo ao passar o mouse */
+ }
+
+ .flex-container {
+  display: flex;
+  width: 1440px; /* Largura de 1.440px */
+  height: 496px; /* Altura de 496px */
+  padding-top: 30px;
+  padding-right: 170px;
+  padding-bottom: 30px;
+  padding-left: 170px;
+  gap: 60px; /* Espaçamento entre os elementos */
+  background-color: #7A1745; /* Cor de fundo */
+  justify-content: space-between; /* Distribui os itens de forma que eles fiquem afastados */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Styling for the image within the flex container */
+.image {
+  width: 540px; /* Fixed width for the image */
+  height: auto; /* Adjust the height automatically to maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the space properly */
+}
+
+/* Main title style */
+.main-title {
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF; /* White color for the text */
+}
+
+.text-container {
+  flex: 1;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-title {
+  font-size: 36px;
+  color: white;
+}
+
+.highlight {
+  color: #FCF4B6; /* Cor de destaque */
+}
+
+.description {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.get-started-btn {
+  width: 240px;
+  height: 48px;
+  background-color: #CB4F57;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Transição suave */
+  margin-left: 130px; /* Adiciona margem à esquerda para mover o botão para a direita */
+}
+
+.get-started-btn:hover {
+  background-color: #E87D83;;
+}
+
+/* Contêiner principal */
+.manager-container {
+    width: 1440px;
+    height: 792px;
+    padding: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo de forma espaçada */
+}
+
+/* Estilo para o título e a descrição */
+.manager {
+  width: 100%; /* Ocupar a largura total do contêiner */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: 100px; /* Move o conteúdo para a direita, ajuste o valor conforme necessário */
+}
+
+.manager-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 15px;
+  
+}
+
+.manager-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #020000;
+  margin-bottom: 20px;
+  width: 100%; /* Ocupa toda a largura disponível */
+  
+}
+
+
+ .learn-more {
+   width: 240px;
+   height: 48px;
+   border-radius: 8px;
+   padding: 12px;
+   background-color: #331436;
+   color: white;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+   margin-top: 20px;
+   transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+ }
+
+ .learn-more:hover {
+   background-color: #5b2e60; /* Cor mais clara quando o mouse passa sobre o botão */
+ }
+
+ /* Container da linha de cards */
+.card-row {
+   display: flex;               /* Layout flexível para os cards */
+   flex-wrap: wrap;             /* Permite que os cards se movam para a próxima linha se necessário */
+   justify-content: center; /* Centraliza os cards */
+   gap: 40px;                   /* Espaçamento entre os cards */
+   margin: 20px 0;              /* Margem superior e inferior */
+ }
+ .card h3 {
+   margin: 20px 0;  
+   margin-bottom: 10px;         /* Espaço abaixo do título */
+ }
+
+ .card-image {
+   width: 100%;                 /* A imagem vai ocupar 100% da largura do card */
+   height: auto;                /* A altura será ajustada automaticamente */
+   margin-bottom: 15px;         /* Espaço entre a imagem e o conteúdo do card */
+ }
+
+  .session-3 {
+   width: 1440px;            /* Largura da sessão */
+   height: 552px;            /* Altura da sessão */
+   padding-top: 60px;        /* Preenchimento superior */
+   padding-right: 170px;     /* Preenchimento direito */
+   padding-bottom: 60px;     /* Preenchimento inferior */
+   padding-left: 170px;      /* Preenchimento esquerdo */
+   background-color: #FCF4B680; /* Cor de fundo com opacidade de 50% */
+   display: flex;            /* Flexbox para alinhamento do conteúdo (opcional) */
+   justify-content: center;  /* Centralizar o conteúdo horizontalmente (opcional) */
+   align-items: center;      /* Centralizar o conteúdo verticalmente (opcional) */
+ }
+
+ .tools-section {
+   display: flex;                /* Flexbox para o layout */
+   flex-direction: column;       /* Organizar os itens em coluna */
+   width: 1100px;                /* Largura da seção */
+   height: 168px;                /* Altura da seção */
+   gap: 24px;                    /* Espaçamento entre os elementos */
+   justify-content: center;      /* Centralizar verticalmente */
+   align-items: center;          /* Centralizar horizontalmente */
+ }
+
+ .featured-tools {
+   width: 520px;                 /* Largura do texto "Featured Tools" */
+   height: 48px;                 /* Altura do texto */
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;             /* Peso da fonte */
+   font-size: 40px;              /* Tamanho da fonte */
+   line-height: 48px;            /* Altura da linha */
+   text-align: center;           /* Alinhar o texto ao centro */
+   color: #331436;               /* Cor do texto */
+   margin-bottom: 12px;          /* Espaço de 12px abaixo do "Featured Tools" */
+ }
+
+ .tools-description {
+   width: 520px;                 /* Largura do texto "Tools to enhance your project management" */
+   height: 48px;                 /* Altura do texto */
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;             /* Peso da fonte */
+   font-size: 16px;              /* Tamanho da fonte */
+   line-height: 24px;            /* Altura da linha */
+   text-align: center;           /* Alinhar o texto ao centro */
+   color: #331436;               /* Cor do texto */
+ }
+
+ .view-all {
+   width: 240px;                 /* Largura do botão */
+   height: 48px;                 /* Altura do botão */
+   border-radius: 8px;           /* Bordas arredondadas */
+   padding: 12px;                /* Preenchimento interno */
+   background-color: #331436;    /* Cor de fundo do botão */
+   color: #FFFFFF;               /* Cor do texto do botão */
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;             /* Peso da fonte */
+   font-size: 16px;              /* Tamanho da fonte */
+   line-height: 24px;            /* Altura da linha */
+   cursor: pointer;             /* Cursor pointer para indicar interatividade */
+   border: none;                 /* Sem borda */
+ }
+
+ .view-all:hover {
+   background-color: #5b2e60;    /* Cor mais clara quando o mouse passa sobre o botão */
+ }
+
+ .flexbox-container {
+   display: flex;                /* Flexbox para organizar os itens */
+   justify-content: space-between; /* Espaçamento uniforme entre os itens */
+   width: 100%;                  /* Largura preenchendo a tela */
+   height: 204px;                /* Altura fixa da Flexbox */
+   gap: 40px;                    /* Espaçamento entre os itens */
+   align-items: center;          /* Alinhar os itens verticalmente no centro */
+   margin-top: 80px;             /* Espaço maior entre o botão e a Flexbox */
+ }
+
+/* Flexbox para os cards */
+.flexbox-container {
+ display: flex;
+ justify-content: space-between;
+ gap: 40px; /* Espaçamento entre os cards */
+ align-items: center;
+ margin-top: 40px;
+ flex-wrap: wrap; /* Para que os cards se adaptem em telas menores */
+}
+
+/* Estilo para o título do card */
+.card-title {
+ width: 245px;
+ height: 28px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 28px;
+ color: #331436; /* Cor roxa */
+ text-align: left; /* Alinhar o título ao centro */
+ margin: 0;
+ display: flex;
+ justify-content: left;
+ align-items: center;
+ text-align: center;
+ 
+}
+
+/* Estilo para a descrição do card */
+.card-description {
+ width: 245px;
+ height: 25px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ color: #331436; /* Cor roxa */
+ text-align: left; /* Alinhar a descrição ao centro */
+ margin: 0;
+}
+
+.container {
+ width: 520px;              /* Largura do contêiner */
+ height: auto;              /* Altura automática para ajustar ao conteúdo */
+ padding: 24px;             /* Espaçamento interno */
+ display: flex;             /* Flexbox para os elementos internos */
+ flex-direction: column;    /* Organizar os elementos em coluna */
+ gap: 24px;                 /* Espaço entre os elementos */
+ background-color: #FFFFFF; /* Cor de fundo (opcional, pode ser ajustada conforme desejado) */
+}
+
+/* Definindo a seção para ocupar a tela inteira */
+.session-4 {
+  width: 100vw; /* Largura total da janela */
+  height: 100vh; /* Altura total da janela */
+  padding: 60px 170px; /* Padding conforme especificado */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+  display: flex;
+  justify-content: center; /* Centra o conteúdo horizontalmente */
+  align-items: center; /* Centra o conteúdo verticalmente */
+  background-color: white; /* Cor de fundo para a seção */
+}
+
+.container-flex {
+  display: flex; /* Alinha os elementos lado a lado */
+  justify-content: space-between; /* Adiciona espaço entre os dois containers */
+  gap: 60px; /* Espaçamento entre os contêineres */
+  width: 100%; /* Preenche toda a largura disponível */
+}
+
+.container-text,
+.container-email {
+  flex: 1; /* Cada seção ocupa o mesmo espaço */
+  padding: 20px;
+}
+
+.email-field,
+.password-field{
+  width: 100%; /* Campos de input se esticam ao máximo */
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo para os títulos dos campos (Email e Password) */
+.container-email h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; /* Peso da fonte */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 20px; /* Altura da linha */
+  color: #331436; /* Cor do texto */
+  margin-top: 10px; /* Espaçamento acima do título */
+  margin-bottom: 8px; /* Espaçamento abaixo do título */
+}
+
+.email-field, .password-field {
+  width: 100%; /* O campo ocupa 100% da largura */
+  height: 48px; /* Altura do campo */
+  padding: 12px; /* Padding interno */
+  margin-bottom: 16px; /* Espaçamento inferior */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; /* Peso da fonte */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 20px; /* Altura da linha */
+  color: #331436; /* Cor do texto */
+}
+
+.subscribe-btn {
+  width: 240px; /* Largura fixa do botão */
+  height: 48px; /* Altura do botão */
+  padding: 12px; /* Padding interno */
+  margin-top: 12px; /* Espaço superior */
+  background-color: #331436; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; /* Peso da fonte */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 20px; /* Altura da linha */
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+/* Efeito de hover no botão Subscribe */
+.subscribe-btn:hover {
+  background-color: #522447; /* Cor de fundo do botão ao passar o mouse */
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
+
+.container-info .title {
+  width: 520px; /* Largura do título */
+  height: 48px; /* Altura do título */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Peso da fonte */
+  font-size: 40px; /* Tamanho da fonte */
+  line-height: 48px; /* Altura da linha */
+  color: #331436; /* Cor do texto */
+}
+
+/* Estilo para a descrição "Enter your credentials" */
+.description {
+  width: 520px; /* Largura do container */
+  height: 96px; /* Altura da descrição */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Peso da fonte */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 24px; /* Altura da linha */
+  color: #331436; /* Cor do texto */
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer {
+  width: 1440px; /* Largura total */
+  height: 220px; /* Altura fixa */
+  padding: 60px; /* Padding */
+  display: flex; /* Usando flexbox */
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+.footer-content {
+  display: flex; /* Flexbox para organizar o conteúdo */
+  justify-content: space-between; /* Espaça os blocos internos */
+  gap: 60px; /* Espaçamento entre os blocos */
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+/* Estilos para o Footer */
+.footer {
+  background-color: #331436;
+  color: #fff;
+  padding: 40px 170px;
+}
+
+.footer-container {
+  width: 786px;  /* Largura fixa do container */
+  height: 100px; /* Altura fixa */
+  display: flex;
+  justify-content: space-between; /* Distribui os itens */
+  gap: 60px; /* Espaçamento de 60px entre os itens */
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px; /* Espaçamento entre os links */
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-left p {
+  margin: 0;
+  color: #fff; /* Define a cor branca para o texto */
+}
