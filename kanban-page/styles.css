@@ -12,7 +12,7 @@ body {
   min-height: 100vh; /* Garantir que cubra toda a altura da tela */
   display: flex; /* Usando flexbox no corpo para layout */
   flex-direction: column; /* Organiza o conteúdo em coluna */
-  
+  overflow-x: hidden; /* Remover barra de rolagem horizontal */
 }
 
 /* Estilos para o header */
@@ -162,7 +162,8 @@ color: #331436;
   display: flex; /* Usando Flexbox para alinhar os blocos */
   gap: 20px; /* Espaço entre os blocos */
   justify-content: space-between; /* Espaçamento uniforme entre os blocos */
-  padding: 40px; /* Padding ao redor do contêiner */
+  padding: 50px; /* Padding ao redor do contêiner */
+  
 }
 
 
