@@ -11,11 +11,14 @@ body {
   background-color: white; /* Cor de fundo suave */
 }
 
+
 /* Estilos gerais */
 body {
    font-family: "Roboto", serif;
    background-color: #ffffff;
- }
+  
+}
+
   /* Header */
  .header {
    display: flex;
@@ -24,8 +27,8 @@ body {
    color: white;
    padding: 20px;
    gap: 20px;
-   width: 1440px; ;
-  
+   width: 1480px;;
+
    height: 80px;;
    justify-content: space-between;
    margin: 0 auto; /* Centraliza o cabeçalho se a largura for menor que a tela */
@@ -65,6 +68,7 @@ body {
    align-items: center;      /* Centraliza verticalmente */
    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
    position: absolute;       /* Define o posicionamento absoluto */
+   left: 1220px;
    right: 20px;              /* Coloca o botão 20px da borda direita */
    bottom: 570px;             /* Coloca o botão 20px da borda inferior (ou pode ser ajustado) */
  }
@@ -74,7 +78,7 @@ body {
 
  .flex-container {
   display: flex;
-  width: 1440px; /* Largura de 1.440px */
+  width: 1480px; /* Largura de 1.480px */
   height: 496px; /* Altura de 496px */
   padding-top: 30px;
   padding-right: 170px;
@@ -228,8 +232,12 @@ body {
    margin-bottom: 15px;         /* Espaço entre a imagem e o conteúdo do card */
  }
 
+ .card:hover {
+  transform: scale(1.05);     /* Aumenta o tamanho do card em 5% */ 
+}
+
   .session-3 {
-   width: 1440px;            /* Largura da sessão */
+   width: 1480px;            /* Largura da sessão */
    height: 552px;            /* Altura da sessão */
    padding-top: 60px;        /* Preenchimento superior */
    padding-right: 170px;     /* Preenchimento direito */
@@ -249,6 +257,7 @@ body {
    gap: 24px;                    /* Espaçamento entre os elementos */
    justify-content: center;      /* Centralizar verticalmente */
    align-items: center;          /* Centralizar horizontalmente */
+   margin-right: 100px;
  }
 
  .featured-tools {
@@ -296,12 +305,14 @@ body {
  .flexbox-container {
    display: flex;                /* Flexbox para organizar os itens */
    justify-content: space-between; /* Espaçamento uniforme entre os itens */
-   width: 100%;                  /* Largura preenchendo a tela */
+   width: 1100px;                  /* Largura preenchendo a tela */
    height: 204px;                /* Altura fixa da Flexbox */
    gap: 40px;                    /* Espaçamento entre os itens */
    align-items: center;          /* Alinhar os itens verticalmente no centro */
    margin-top: 80px;             /* Espaço maior entre o botão e a Flexbox */
- }
+   margin-left: 40px;
+  }
+ 
 
 /* Flexbox para os cards */
 .flexbox-container {
@@ -371,6 +382,7 @@ body {
   justify-content: space-between; /* Adiciona espaço entre os dois containers */
   gap: 60px; /* Espaçamento entre os contêineres */
   width: 100%; /* Preenche toda a largura disponível */
+  flex-grow: 1;
 }
 
 .container-text,
@@ -466,7 +478,7 @@ p {
 }
 
 .footer {
-  width: 1440px; /* Largura total */
+  width: 1480px; /* Largura total */
   height: 220px; /* Altura fixa */
   padding: 60px; /* Padding */
   display: flex; /* Usando flexbox */
