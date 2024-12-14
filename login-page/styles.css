@@ -6,15 +6,30 @@
 }
 
 /* Estilo geral para o corpo da página */
-body {
+html,body {
+    height: 100%; 
+   
     font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
     background-color: white; /* Cor de fundo suave */
+    margin: 0; /* Remove margens padrão */
+    display: flex; /* Usar flexbox para organizar o layout */
+    flex-direction: column; /* Coloca o conteúdo na vertical */
+    justify-content: space-between; /* Distribui o conteúdo: header no topo, footer no fundo */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-y: hidden; /* Impede rolagem vertical */
+}
+
+html {
+  overflow-x: hidden; /* Impede rolagem horizontal */
+  overflow-y: hidden; /* Impede rolagem vertical */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove paddings padrão */
 }
 
 
 /* Estilos para o header */
 .header {
-    width: 1440px; /* Largura fixa */
+    width:  100%; /* Largura fixa */
     height: 80px;  /* Altura fixa */
     padding: 20px; /* Padding de 20px */
     display: flex;
@@ -163,78 +178,90 @@ body {
     color: #331436; /* Cor do texto */
 }
 
+
 .footer {
-    width: 1440px; /* Largura total */
-    height: 220px; /* Altura fixa */
-    padding: 60px; /* Padding */
-    display: flex; /* Usando flexbox */
-    justify-content: space-between; /* Espaça os itens */
-    align-items: center; /* Alinha os itens verticalmente */
-    background-color: #333; /* Cor de fundo do footer */
-    color: #fff; /* Cor do texto */
-    box-sizing: border-box; /* Inclui o padding no tamanho total */
-  }
-  
-  .footer-content {
-    display: flex; /* Flexbox para organizar o conteúdo */
-    justify-content: space-between; /* Espaça os blocos internos */
-    gap: 60px; /* Espaçamento entre os blocos */
-    width: 100%; /* Ocupa toda a largura disponível */
-  }
-  
-  .footer-logo img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .footer-links a,
-  .footer-social a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .footer-links a:hover,
-  .footer-social a:hover {
-    text-decoration: underline; /* Adiciona sublinhado no hover */
-  }
-  
-  /* Estilos para o Footer */
-  .footer {
-    background-color: #331436;
-    color: #fff;
-    padding: 40px 170px;
-  }
-  
-  .footer-container {
-    width: 786px;  /* Largura fixa do container */
-    height: 100px; /* Altura fixa */
-    display: flex;
-    justify-content: space-between; /* Distribui os itens */
-    gap: 60px; /* Espaçamento de 60px entre os itens */
-    align-items: center; /* Centraliza verticalmente os itens */
-  }
-  
-  .footer-left p {
-    margin: 0;
-  }
-  
-  .footer-links {
-    display: flex;
-    gap: 40px; /* Espaçamento entre os links */
-  }
-  
-  .footer-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .footer-link:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-left p {
-    margin: 0;
-    color: #fff; /* Define a cor branca para o texto */
-  }
+  width: 1440px; /* Largura total */
+  height: 220px; /* Altura fixa */
+  padding: 60px; /* Padding */
+  display: flex; /* Usando flexbox */
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+.footer-content {
+  display: flex; /* Flexbox para organizar o conteúdo */
+  justify-content: space-between; /* Espaça os blocos internos */
+  gap: 60px; /* Espaçamento entre os blocos */
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  margin-top: -45px; /* Movimenta para cima */
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+  margin-top: -45px; /* Movimenta para cima */
+}
+
+.footer-social {
+  display: flex; /* Flexbox para organizar os itens */
+  gap: 20px; /* Espaçamento entre os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  margin-top: -25px; /* Movimenta para cima ainda mais */
+}
+
+
+/* Estilos para o Footer */
+.footer {
+  background-color: #331436;
+  color: #fff;
+  padding: 40px 170px;
+}
+
+.footer-container {
+  width: 786px;  /* Largura fixa do container */
+  height: 100px; /* Altura fixa */
+  display: flex;
+  justify-content: space-between; /* Distribui os itens */
+  gap: 60px; /* Espaçamento de 60px entre os itens */
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px; /* Espaçamento entre os links */
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-left p {
+  margin: 0;
+  color: #fff; /* Define a cor branca para o texto */
+  margin-top: -45px; /* Move o texto um pouco para cima */
+}
