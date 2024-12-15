@@ -31,7 +31,7 @@ body {
 
    height: 80px;;
    justify-content: space-between;
-   margin: 0 auto; /* Centraliza o cabeçalho se a largura for menor que a tela */
+   margin: auto; /* Centraliza o cabeçalho se a largura for menor que a tela */
  }
 
   .header-title {
@@ -159,6 +159,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribui o conteúdo de forma espaçada */
+    margin-bottom: 30px; 
 }
 
 /* Estilo para o título e a descrição */
@@ -281,6 +282,7 @@ body {
    line-height: 24px;            /* Altura da linha */
    text-align: center;           /* Alinhar o texto ao centro */
    color: #331436;               /* Cor do texto */
+   
  }
 
  .view-all {
@@ -296,6 +298,7 @@ body {
    line-height: 24px;            /* Altura da linha */
    cursor: pointer;             /* Cursor pointer para indicar interatividade */
    border: none;                 /* Sem borda */
+   margin-top: -30px; 
  }
 
  .view-all:hover {
@@ -322,6 +325,7 @@ body {
  align-items: center;
  margin-top: 40px;
  flex-wrap: wrap; /* Para que os cards se adaptem em telas menores */
+ margin-left: 150px;
 }
 
 /* Estilo para o título do card */
@@ -353,6 +357,7 @@ body {
  color: #331436; /* Cor roxa */
  text-align: left; /* Alinhar a descrição ao centro */
  margin: 0;
+ margin-left: -20px; 
 }
 
 .container {
