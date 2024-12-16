@@ -1,4 +1,4 @@
-# T REX: Challenge 1 - Week 04 Programa de Bolsas | Front-end Development (React) - AWS Cloud Context
+# TI REX: Challenge 1 - Week 04 Programa de Bolsas | Front-end Development (React) - AWS Cloud Context
 
 ## :rocket: **Challenge Objective** 
 
